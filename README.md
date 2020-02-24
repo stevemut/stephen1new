@@ -1,5 +1,6 @@
 # stephen1new
 #creating a 2 by 3 named object die
+library("ggplot2")
 die<-1:6
 names(die)<-c("one","two","three","four","five","six")
 dim(die)<-c(2,3)
@@ -13,4 +14,4 @@ roll<-function(){
 #replicating the rolls 1000 times and visualises the numbers
 chance<-replicate(1000,roll())
 qplot(chance,binwidth=1)
-
+<-
